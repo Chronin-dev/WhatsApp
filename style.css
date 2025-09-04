@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1a202c; /* Dark background color fallback */
+    color: #e2e8f0; /* Light text color */
+    background-image: url('../assets/images/jcorl_monument_valley.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.liquid-glass-container {
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    background-color: rgba(45, 55, 72, 0.7); /* Slightly transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.input-liquid-glass {
+    backdrop-filter: blur(5px) saturate(150%);
+    -webkit-backdrop-filter: blur(5px) saturate(150%);
+    background-color: rgba(132, 172, 217, 0.3); /* Lighter, bluish glass color */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.input-liquid-glass:focus-within {
+    outline: none;
+    border-color: #22c55e;
+    box-shadow: 0 0 0 2px #22c55e;
+}
+
+.dropdown-menu {
+    backdrop-filter: blur(5px) saturate(150%);
+    -webkit-backdrop-filter: blur(5px) saturate(150%);
+    background-color: rgba(45, 55, 72, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-item:hover {
+    background-color: rgba(74, 85, 104, 0.5);
+}
+
+.country-code-text {
+    color: #ffffff; /* Normal text color for the country code */
+    -webkit-text-fill-color: initial; /* Remove any fill color that might be causing the glow */
+}
