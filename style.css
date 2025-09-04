@@ -3,7 +3,7 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: #1a202c; /* Dark background color fallback */
     color: #e2e8f0; /* Light text color */
-    background-image: url('StreetLamp_desktop.png');
+    background-image: url('StreetLamp_desktop.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
